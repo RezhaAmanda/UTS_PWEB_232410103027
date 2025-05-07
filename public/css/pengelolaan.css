@@ -1,0 +1,171 @@
+/* Pengaturan Umum */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Kontainer */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header Pengelolaan */
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.dashboard-header img {
+    max-width: 150px; /* Sesuaikan ukuran gambar */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.dashboard-header h1 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.dashboard-header p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Form ToDo */
+.todo-form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.todo-form input[type="text"] {
+    padding: 12px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.todo-form input[type="text"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.todo-form button {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.todo-form button:hover {
+    background-color: #45a049;
+}
+
+/* Daftar ToDo */
+.todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.todo-item {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+
+.todo-item div {
+    display: flex;
+    gap: 10px;
+}
+
+.todo-item button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.todo-item button:hover {
+    background-color: #45a049;
+}
+
+.todo-item .logout {
+    background-color: #f44336;
+}
+
+.todo-item .logout:hover {
+    background-color: #d32f2f;
+}
+
+/* No Task Message */
+.no-task {
+    text-align: center;
+    color: #888;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+/* Tombol Navigasi (Dashboard, Profil, Logout) */
+.nav-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    margin: 0 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-3px); /* Efek angkat tombol */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Bayangan lebih tebal saat hover */
+}
+
+.nav-btn:active {
+    background-color: #388e3c; /* Warna lebih gelap saat ditekan */
+    transform: translateY(0); /* Menonaktifkan efek angkat saat ditekan */
+}
+
+/* Tombol Logout */
+.logout {
+    background-color: #f44336;
+}
+
+.logout:hover {
+    background-color: #d32f2f;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.logout:active {
+    background-color: #c62828;
+    transform: translateY(0);
+}
